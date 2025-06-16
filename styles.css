@@ -1,0 +1,120 @@
+:root {
+  --back-color: #9fadade8;
+  --container-color: #2d2f3fe8;
+  --text-color: #1b1b32;
+  --deco-color: linear-gradient(90deg, #808080 0%, #87ceeb 50%, #808080 100%);
+  --clear-btn-color: #c7251dd7;
+  --check-btn-color: #088d25;
+}
+body {
+  background-color: var(--back-color);
+  text-align: center;
+  font-size: 20px;
+  color: var(--text-color);
+}
+fieldset {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  min-width: 200px;
+  width: 38%;
+  height: 500px;
+  align-items: center;
+  margin: 0 auto;
+  border: 5px solid var(--container-color);
+  border-radius: 2rem;
+  text-align: left;
+}
+.container {
+  margin-top: 3rem;
+}
+.deco1,
+.deco2 {
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  left: 0;
+
+  max-width: 1000px;
+  min-width: 200px;
+  height: 30px;
+  background: var(--deco-color);
+  z-index: -1;
+}
+.deco1 {
+  top: 0;
+
+  bottom: 7px;
+  border-top-right-radius: 2rem;
+  border-top-left-radius: 2rem;
+}
+.deco2 {
+  bottom: 0;
+
+  top: 490px;
+  border-bottom-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+}
+.deco3 {
+  position: relative;
+  width: 50%;
+  height: 15px;
+  background-color: black;
+  border-radius: 2rem;
+  bottom: 3px;
+  z-index: 0;
+}
+.deco4 {
+  position: relative;
+  width: 3%;
+  height: 8px;
+  background-color: white;
+  border-radius: 50%;
+  bottom: 14px;
+  left: 45px;
+  z-index: 1;
+}
+label {
+  margin-left: 0.5rem;
+}
+input {
+  border-radius: 1rem;
+  border: 2px solid var(--container-color);
+  width: 90%;
+  height: 1.5rem;
+  margin: 0;
+  padding: 5px 8px;
+}
+#results-div {
+  width: 90%;
+  margin: 0.5em 0;
+  margin-left: 0.5rem;
+  padding: 5px;
+}
+.buttons {
+  position: relative;
+  top: 270px;
+  text-align: center;
+}
+#check-btn,
+#clear-btn {
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 0.3rem 1rem;
+  border-radius: 100px;
+  color: white;
+  margin: 0 0.3rem;
+}
+#check-btn:hover,
+#clear-btn:hover {
+  cursor: pointer;
+  color: var(--text-color);
+  background: var(--deco-color);
+}
+#check-btn {
+  background: var(--check-btn-color);
+}
+#clear-btn {
+  background: var(--clear-btn-color);
+}
