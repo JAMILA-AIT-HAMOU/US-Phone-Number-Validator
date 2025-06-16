@@ -28,6 +28,9 @@ fieldset {
 }
 .container {
   margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 .deco1,
 .deco2 {
@@ -91,10 +94,13 @@ input {
   margin: 0.5em 0;
   margin-left: 0.5rem;
   padding: 5px;
+  min-height: 10px;
 }
 .buttons {
   position: relative;
-  top: 270px;
+  margin-top: auto;
+  margin-bottom: 1.5rem;
+  
   text-align: center;
 }
 #check-btn,
